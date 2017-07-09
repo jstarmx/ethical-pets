@@ -50,7 +50,7 @@ $(function() {
 
     // JavaScript workaround for expanding the active category tree line.
     // Preferably you should use an override and return expanded tree from the server side
-    // @see themes/community-theme-default/modules/blockcategories/list_group_item.tpl
+    // @see themes/ethical-pets/modules/blockcategories/list_group_item.tpl
     var $activeMenuLink = $('.list-group-item.current');
     // Collect and expand all expandable parent nodes (going up)
     $activeMenuLink.parents('.collapse').add(

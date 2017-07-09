@@ -2,10 +2,10 @@
 Error: File to import not found or unreadable: bourbon.
        Load paths:
          Compass::SpriteImporter
-         /home/michael/PhpstormProjects/tb/themes/community-theme-default/sass
+         /home/michael/PhpstormProjects/tb/themes/ethical-pets/sass
          /var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets
-        on line 61 of /home/michael/PhpstormProjects/tb/themes/community-theme-default/sass/_theme_variables.scss
-        from line 1 of /home/michael/PhpstormProjects/tb/themes/community-theme-default/sass/modules/carriercompare/style.scss
+        on line 61 of /home/michael/PhpstormProjects/tb/themes/ethical-pets/sass/_theme_variables.scss
+        from line 1 of /home/michael/PhpstormProjects/tb/themes/ethical-pets/sass/modules/carriercompare/style.scss
 
 56:   .table {
 57:     margin-bottom:20px;
@@ -20,8 +20,8 @@ Error: File to import not found or unreadable: bourbon.
 66:   text-decoration: none;
 
 Backtrace:
-/home/michael/PhpstormProjects/tb/themes/community-theme-default/sass/_theme_variables.scss:61
-/home/michael/PhpstormProjects/tb/themes/community-theme-default/sass/modules/carriercompare/style.scss:1
+/home/michael/PhpstormProjects/tb/themes/ethical-pets/sass/_theme_variables.scss:61
+/home/michael/PhpstormProjects/tb/themes/ethical-pets/sass/modules/carriercompare/style.scss:1
 /var/lib/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/import_node.rb:67:in `rescue in import'
 /var/lib/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/import_node.rb:45:in `import'
 /var/lib/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -78,4 +78,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: bourbon.\A        Load paths:\A          Compass::SpriteImporter\A          /home/michael/PhpstormProjects/tb/themes/community-theme-default/sass\A          /var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets\A         on line 61 of /home/michael/PhpstormProjects/tb/themes/community-theme-default/sass/_theme_variables.scss\A         from line 1 of /home/michael/PhpstormProjects/tb/themes/community-theme-default/sass/modules/carriercompare/style.scss\A \A 56:   .table {\A 57:     margin-bottom:20px;\A 58:   }\A 59: }\A 60: #compare_shipping ul#carriercompare_errors_list {\A 61:   color: red;\A 62: }\A 63: #compare_shipping_form { padding-bottom:20px;}\A 64: #compare_shipping ul#carriercompare_errors_list li {\A 65:   margin-left: 30px;\A 66:   text-decoration: none;"; }
+  content: "Error: File to import not found or unreadable: bourbon.\A        Load paths:\A          Compass::SpriteImporter\A          /home/michael/PhpstormProjects/tb/themes/ethical-pets/sass\A          /var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets\A         on line 61 of /home/michael/PhpstormProjects/tb/themes/ethical-pets/sass/_theme_variables.scss\A         from line 1 of /home/michael/PhpstormProjects/tb/themes/ethical-pets/sass/modules/carriercompare/style.scss\A \A 56:   .table {\A 57:     margin-bottom:20px;\A 58:   }\A 59: }\A 60: #compare_shipping ul#carriercompare_errors_list {\A 61:   color: red;\A 62: }\A 63: #compare_shipping_form { padding-bottom:20px;}\A 64: #compare_shipping ul#carriercompare_errors_list li {\A 65:   margin-left: 30px;\A 66:   text-decoration: none;"; }

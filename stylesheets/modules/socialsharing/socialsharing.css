@@ -2,14 +2,14 @@
 Error: File to import not found or unreadable: bourbon.
        Load paths:
          Compass::SpriteImporter
-         /home/michael/PhpstormProjects/tb/themes/community-theme-default/sass
+         /home/michael/PhpstormProjects/tb/themes/ethical-pets/sass
          /var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets
-        on line 61 of /home/michael/PhpstormProjects/tb/themes/community-theme-default/sass/_theme_variables.scss
-        from line 2 of /home/michael/PhpstormProjects/tb/themes/community-theme-default/sass/modules/socialsharing/socialsharing.scss
+        on line 61 of /home/michael/PhpstormProjects/tb/themes/ethical-pets/sass/_theme_variables.scss
+        from line 2 of /home/michael/PhpstormProjects/tb/themes/ethical-pets/sass/modules/socialsharing/socialsharing.scss
 
 Backtrace:
-/home/michael/PhpstormProjects/tb/themes/community-theme-default/sass/_theme_variables.scss:61
-/home/michael/PhpstormProjects/tb/themes/community-theme-default/sass/modules/socialsharing/socialsharing.scss:2
+/home/michael/PhpstormProjects/tb/themes/ethical-pets/sass/_theme_variables.scss:61
+/home/michael/PhpstormProjects/tb/themes/ethical-pets/sass/modules/socialsharing/socialsharing.scss:2
 /var/lib/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/import_node.rb:67:in `rescue in import'
 /var/lib/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/import_node.rb:45:in `import'
 /var/lib/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -66,4 +66,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: bourbon.\A        Load paths:\A          Compass::SpriteImporter\A          /home/michael/PhpstormProjects/tb/themes/community-theme-default/sass\A          /var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets\A         on line 61 of /home/michael/PhpstormProjects/tb/themes/community-theme-default/sass/_theme_variables.scss\A         from line 2 of /home/michael/PhpstormProjects/tb/themes/community-theme-default/sass/modules/socialsharing/socialsharing.scss"; }
+  content: "Error: File to import not found or unreadable: bourbon.\A        Load paths:\A          Compass::SpriteImporter\A          /home/michael/PhpstormProjects/tb/themes/ethical-pets/sass\A          /var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets\A         on line 61 of /home/michael/PhpstormProjects/tb/themes/ethical-pets/sass/_theme_variables.scss\A         from line 2 of /home/michael/PhpstormProjects/tb/themes/ethical-pets/sass/modules/socialsharing/socialsharing.scss"; }
