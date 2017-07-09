@@ -47,15 +47,15 @@
 }
 
 .product-label-new {
-  background: #6ad4ff;
+  background: $brand-info;
 }
 
 .product-label-sale {
-  background: #f13340;
+  background: $brand-primary;
 }
 
 .product-label-discount {
-  background-color: #f13340;
+  background-color: $brand-primary;
 }
 
 .product-label-online {

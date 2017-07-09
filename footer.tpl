@@ -14,15 +14,12 @@
       </div>
     {/if}
 
-    {if !empty($ctheme.footer.copyright.display)}
-      <div id="copyright-footer" role="contentinfo">
-        {$ctheme.footer.copyright.html}
-      </div>
-    {/if}
-
   </footer>
 
 {/if}
 {include file="$tpl_dir./global.tpl"}
+</div>
+</div>
+</div>
 </body>
 </html>

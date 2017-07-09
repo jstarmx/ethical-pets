@@ -1,28 +1,7 @@
-//
-// Place your theme variables here
-//
-
-// PrestaShop Blocks
-$ps-border-color : #d6d4d4;
-
-// PrestaShop Products
-$product-price-reduction-bg    : #f00;
-$product-price-reduction-color : #fff;
-
-$product-price-special-color   : #f00;
-$product-price-old-color       : #b1b1b1;
-
-// PrestaShop Product Labels
-// @TODO SASS label colors
-
-//
-// Override vendor variables here
-//
-
 // Bootstrap
-$border-radius-base  : 0;
-$border-radius-large : 0;
-$border-radius-small : 0;
+// $border-radius-base  : 0;
+// $border-radius-large : 0;
+// $border-radius-small : 0;
 // @TODO Override top navbar collapse point
 
 $font-size-base: 14px; // Default is 14px
@@ -38,9 +17,11 @@ $font-size-h6: $font-size-base;                // ~14px (default: 12px)
 // @see themes/ethical-pets/sass/vendor/bootstrap/bootstrap/_variables.scss
 $brand-primary: #F51164 !default; // #337ab7
 // $brand-success:  #5cb85c;
-// $brand-info:     #5bc0de;
+$brand-info:     #8599CA;
 // $brand-warning:  #f0ad4e;
 // $brand-danger:   #d9534f;
+$purple: #772865;
+$sand: #f4f0e3;
 
 // @see themes/ethical-pets/sass/vendor/bootstrap/bootstrap/_variables.scss
 // $state-success-bg: #dff0d8;
@@ -98,3 +79,13 @@ $fa-font-path: "../fonts/font-awesome";
 // Custom mixins + bourbon
 @import "bourbon";
 @import "vendor_mixins";
+
+// PrestaShop Blocks
+$ps-border-color : #d6d4d4;
+
+// PrestaShop Products
+$product-price-reduction-bg    : $brand-primary;
+$product-price-reduction-color : #fff;
+
+$product-price-special-color   : $brand-primary;
+$product-price-old-color       : #b1b1b1;
