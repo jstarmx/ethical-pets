@@ -98,12 +98,12 @@
 
   <div id="header-blocks" class="container">
     <div class="row header-blocks__row">
-      <div id="shop-logo" class="col-sm-4">
+      <div id="shop-logo" class="col-sm-4 col-md-3">
         <a href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}" title="{$shop_name|escape:'html':'UTF-8'}">
           <img class="img-responsive center-block" src="{$img_dir}logo.png" alt="{$shop_name|escape:'html':'UTF-8'}" />
         </a>
       </div>
-      <div class="col-sm-8 col--flex col--align-center">
+      <div class="col-sm-8 col-md-9 col--flex col--align-center">
         <div class="row">
           {if !empty($HOOK_TOP)}{$HOOK_TOP}{/if}
         </div>
