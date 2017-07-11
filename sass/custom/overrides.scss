@@ -57,22 +57,52 @@ a {
 .header-blocks {
   &__row {
     display: flex;
-    flex-direction: column;
 
-    @media (min-width: $screen-sm-min) {
-      flex-direction: row;
+    @media (max-width: $screen-sm-min) {
+      flex-direction: column;
     }
   }
 }
 
-.sf-menu {
-  display: flex;
+body .sf-menu {
+  background: none;
+  border: none;
+
+  @media (min-width: $screen-sm-min) {
+    display: flex;
+  }
 
   & > li {
+    border: none;
     flex-grow: 1;
 
+    span {
+      color: $body-bg;
+      top: 11px;
+    }
+
     & > a {
+      border: none;
+      color: $body-bg;
       text-align: center;
+      background-color: $gold;
+
+      @media (min-width: $screen-sm-min) {
+        border-radius: $border-radius-base;
+        margin-right: 10px;
+      }
+    }
+
+    &:nth-child(2) > a {
+      background-color: $brand-info;
+    }
+
+    &:nth-child(3) > a {
+      background-color: $purple;
+    }
+
+    &:last-child > a {
+      margin-right: 0;
     }
   }
 }
