@@ -89,6 +89,12 @@
         {capture name='displayNav'}{hook h='displayNav'}{/capture}
         {if $smarty.capture.displayNav}
           <ul id="header-navbar-right-nav" class="nav navbar-nav navbar-right">
+            <li><a href="/">Home</a></li>
+            <li><a href="/info/about-us">About Us</a></li>
+            <li><a href="/info/ethical-policy">Ethical Policy</a></li>
+            <li><a href="/info/delivery">Delivery</a></li>
+            <li><a href="/contact-us">Contact Us</a></li>
+            <li><a href="/info/cookies">Cookies</a></li>
             {$smarty.capture.displayNav}
           </ul>
         {/if}
@@ -105,6 +111,9 @@
       </div>
       <div class="col-sm-8 col-md-9 col--flex col--align-center">
         <div class="row">
+          <div class="column-12">
+            <h2 class="header-blocks__strap">The pet shop that's all sorts of ethical!</h2>
+          </div>
           {if !empty($HOOK_TOP)}{$HOOK_TOP}{/if}
         </div>
       </div>

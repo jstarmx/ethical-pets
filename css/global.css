@@ -10061,6 +10061,16 @@ a:hover {
   }
 }
 
+.header-blocks__strap {
+  margin: 5px 0 15px 15px;
+}
+
+@media (min-width: 992px) {
+  .header-blocks__strap {
+    margin-bottom: 0;
+  }
+}
+
 body .sf-menu {
   background: none;
   border: none;
@@ -10091,6 +10101,7 @@ body .sf-menu > li > a {
   color: #fff;
   text-align: center;
   background-color: #d5ae13;
+  text-transform: none;
 }
 
 @media (min-width: 768px) {
@@ -10106,6 +10117,10 @@ body .sf-menu > li:nth-child(2) > a {
 
 body .sf-menu > li:nth-child(3) > a {
   background-color: #772865;
+}
+
+body .sf-menu > li:nth-child(4) > a {
+  background-color: #d76724;
 }
 
 body .sf-menu > li:last-child > a {
@@ -10241,4 +10256,30 @@ body .box-info-product {
 
 .box {
   background: #fff;
+}
+
+#blocksocial {
+  padding-bottom: 0;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+#tabbedcathome {
+  border-radius: 0;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 70px;
+  -webkit-transform: translateY(50px);
+  transform: translateY(50px);
+}
+
+#filterCat {
+  font-size: 1.5em;
+  margin: -62px 0 0 -11px;
+}
+
+body #isotopeCategories .s_title_block {
+  font-size: 20px;
+  height: 50px;
+  margin-top: 0;
 }
