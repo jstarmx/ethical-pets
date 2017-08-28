@@ -173,7 +173,7 @@
 
         {if isset($HOOK_EXTRA_RIGHT) && $HOOK_EXTRA_RIGHT}{$HOOK_EXTRA_RIGHT}{/if}
 
-        {if !$content_only}
+        {*if !$content_only}
           <ul id="usefull_link_block" class="list-unstyled hidden-print">
             {if !empty($HOOK_EXTRA_LEFT)}{$HOOK_EXTRA_LEFT}{/if}
             <li>
@@ -182,7 +182,7 @@
               </a>
             </li>
           </ul>
-        {/if}
+        {/if*}
       </div>
 
       <div class="pb-right-column col-xs-12 col-sm-4 col-md-3">

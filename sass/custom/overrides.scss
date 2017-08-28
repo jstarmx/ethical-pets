@@ -102,16 +102,27 @@ body #blockcart {
 }
 
 body #blockcart-header {
+  align-items: center;
   background: $sand;
   border: 1px solid darken($sand, 15%);
   border-radius: 6px;
   color: $text-color;
+  display: flex;
   overflow: visible;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .basket-image {
   height: 70px;
-  margin: -30px -10px 0 -20px;
+  margin: -25px -5px 0 -20px;
+}
+
+.basket-text {
+  flex-grow: 1;
+  line-height: 16px;
 }
 
 #header-blocks, #columns, #footer {
@@ -148,8 +159,12 @@ body .box-info-product {
   background: $body-bg;
 }
 
-.blockcategories .list-group-item {
+body .blockcategories .list-group-item {
   border-radius: 0;
+
+  &.current:before {
+    display: none;
+  }
 }
 
 .block {
@@ -319,6 +334,10 @@ body .ocqc-form {
   margin-bottom: 3px;
 }
 
+body .ocqc-notification {
+  background: $brand-primary;
+}
+
 body .product_list.grid .product-price-button-wrapper {
   min-height: 65px;
 }
@@ -329,4 +348,9 @@ body .product_list.grid .product-price-button-wrapper {
   .page-heading.product-listing {
     display: none;
   }
+}
+
+body #bestkit_bootstraptabs {
+  background: none;
+  border: none;
 }
