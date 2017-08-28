@@ -30,9 +30,9 @@
 
         {include file="./nbr-product-page.tpl"}
       </div>
-      <div class="top-pagination-content form-inline clearfix">
+      {* <div class="top-pagination-content form-inline clearfix">
         {include file="$tpl_dir./pagination.tpl" no_follow=1}
-      </div>
+      </div> *}
     </div>
 
     <ul id="suppliers_list" class="list-grid row">

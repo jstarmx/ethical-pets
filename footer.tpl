@@ -21,5 +21,6 @@
 </div>
 </div>
 </div>
+<script type="text/javascript" src="{$js_dir}custom.js"></script>
 </body>
 </html>

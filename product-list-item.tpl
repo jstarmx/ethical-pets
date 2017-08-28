@@ -134,7 +134,7 @@
     {if isset($product.color_list)}
       <div class="color-list-container">{$product.color_list}</div>
     {/if}
-    {if (!$PS_CATALOG_MODE && $PS_STOCK_MANAGEMENT && ((isset($product.show_price) && $product.show_price) || (isset($product.available_for_order) && $product.available_for_order)))}
+    {*if (!$PS_CATALOG_MODE && $PS_STOCK_MANAGEMENT && ((isset($product.show_price) && $product.show_price) || (isset($product.available_for_order) && $product.available_for_order)))}
       {if isset($product.available_for_order) && $product.available_for_order && !isset($restricted_country_mode)}
         <div class="availability">
           {if ($product.allow_oosp || $product.quantity > 0)}
@@ -148,7 +148,7 @@
           {/if}
         </div>
       {/if}
-    {/if}
+    {/if*}
     {if $show_functional_buttons}
       <div class="functional-buttons clearfix show-if-product-grid-hover">
         {hook h='displayProductListFunctionalButtons' product=$product}
