@@ -19,7 +19,6 @@
         {/foreach}
       </ul>
       <div id="homeslider-pager">
-        <span>{l s='More offers:' mod='homeslider'}</span>
         <span id="homeslider-pages"></span>
       </div>
     </div>

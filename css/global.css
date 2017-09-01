@@ -10135,14 +10135,15 @@ body #blockcart-header:hover {
 }
 
 #home-page-tabs {
+  font-size: 1em;
   font-weight: normal;
-  margin-bottom: 0;
+  border-bottom: 0;
 }
 
 .tab-content {
   background-color: #fff;
   border: solid #ddd;
-  border-width: 0 1px 2px;
+  border-width: 1px 1px 2px;
   padding: 15px;
   margin-bottom: 20px;
 }
@@ -10236,7 +10237,8 @@ body .blockcategories .list-group-item.current:before {
   margin-right: 15px;
 }
 
-#tabbedcathome #filterCat > li {
+#filterCat > li,
+#home-page-tabs > li {
   border: none;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
@@ -10245,17 +10247,20 @@ body .blockcategories .list-group-item.current:before {
 }
 
 @media (min-width: 768px) {
-  #tabbedcathome #filterCat > li {
+  #filterCat > li,
+  #home-page-tabs > li {
     font-size: 1.5em;
   }
 }
 
-#tabbedcathome #filterCat > li span {
+#filterCat > li span,
+#home-page-tabs > li span {
   color: #fff;
   top: 11px;
 }
 
-#tabbedcathome #filterCat > li > a {
+#filterCat > li > a,
+#home-page-tabs > li > a {
   background-color: #d5ae13;
   border-radius: 4px;
   color: #fff;
@@ -10265,27 +10270,33 @@ body .blockcategories .list-group-item.current:before {
   text-transform: none;
 }
 
-#tabbedcathome #filterCat > li:nth-child(5n + 2) > a {
+#filterCat > li:nth-child(5n + 2) > a,
+#home-page-tabs > li:nth-child(5n + 2) > a {
   background-color: #8599CA;
 }
 
-#tabbedcathome #filterCat > li:nth-child(5n + 3) > a {
+#filterCat > li:nth-child(5n + 3) > a,
+#home-page-tabs > li:nth-child(5n + 3) > a {
   background-color: #772865;
 }
 
-#tabbedcathome #filterCat > li:nth-child(5n + 4) > a {
+#filterCat > li:nth-child(5n + 4) > a,
+#home-page-tabs > li:nth-child(5n + 4) > a {
   background-color: #d76724;
 }
 
-#tabbedcathome #filterCat > li:nth-child(5n + 5) > a {
+#filterCat > li:nth-child(5n + 5) > a,
+#home-page-tabs > li:nth-child(5n + 5) > a {
   background-color: #F51164;
 }
 
-#tabbedcathome #filterCat > li:last-child > a {
+#filterCat > li:last-child > a,
+#home-page-tabs > li:last-child > a {
   margin-right: 0;
 }
 
-#tabbedcathome #filterCat > li.active > a {
+#filterCat > li.active > a,
+#home-page-tabs > li.active > a {
   background-color: white;
   border-color: #ddd;
   color: #555;
