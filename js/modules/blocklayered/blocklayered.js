@@ -233,7 +233,7 @@ function paginationButton(nbProductsIn, nbProductOut) {
     }
 
     var location = window.location.href.replace(/#.*$/, '');
-    $(this).attr('href', location + current_friendly_url.replace(/\/page-(\d+)/, '') + '/page-' + page);
+    // $(this).attr('href', location + current_friendly_url.replace(/\/page-(\d+)/, '') + '/page-' + page);
   });
 
   //product count refresh
