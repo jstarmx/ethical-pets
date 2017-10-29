@@ -2707,27 +2707,27 @@ fieldset[disabled] .btn-primary.focus {
 
 .btn-success {
   color: #fff;
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: #F51164;
+  border-color: #e30a59;
 }
 
 .btn-success:focus, .btn-success.focus {
   color: #fff;
-  background-color: #449d44;
-  border-color: #255625;
+  background-color: #ca094f;
+  border-color: #690429;
 }
 
 .btn-success:hover {
   color: #fff;
-  background-color: #449d44;
-  border-color: #398439;
+  background-color: #ca094f;
+  border-color: #a80742;
 }
 
 .btn-success:active, .btn-success.active,
 .open > .btn-success.dropdown-toggle {
   color: #fff;
-  background-color: #449d44;
-  border-color: #398439;
+  background-color: #ca094f;
+  border-color: #a80742;
 }
 
 .btn-success:active:hover, .btn-success:active:focus, .btn-success:active.focus, .btn-success.active:hover, .btn-success.active:focus, .btn-success.active.focus,
@@ -2735,8 +2735,8 @@ fieldset[disabled] .btn-primary.focus {
 .open > .btn-success.dropdown-toggle:focus,
 .open > .btn-success.dropdown-toggle.focus {
   color: #fff;
-  background-color: #398439;
-  border-color: #255625;
+  background-color: #a80742;
+  border-color: #690429;
 }
 
 .btn-success:active, .btn-success.active,
@@ -2748,12 +2748,12 @@ fieldset[disabled] .btn-primary.focus {
 fieldset[disabled] .btn-success:hover,
 fieldset[disabled] .btn-success:focus,
 fieldset[disabled] .btn-success.focus {
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: #F51164;
+  border-color: #e30a59;
 }
 
 .btn-success .badge {
-  color: #5cb85c;
+  color: #F51164;
   background-color: #fff;
 }
 
@@ -4540,11 +4540,11 @@ a.label:hover, a.label:focus {
 }
 
 .label-success {
-  background-color: #5cb85c;
+  background-color: #F51164;
 }
 
 .label-success[href]:hover, .label-success[href]:focus {
-  background-color: #449d44;
+  background-color: #ca094f;
 }
 
 .label-info {
@@ -4857,7 +4857,7 @@ a.thumbnail.active {
 }
 
 .progress-bar-success {
-  background-color: #5cb85c;
+  background-color: #F51164;
 }
 
 .progress-striped .progress-bar-success {
@@ -9994,7 +9994,12 @@ body {
 }
 
 .wrapper {
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
 }
 
 .wrapper::before, .wrapper::after {
@@ -10012,14 +10017,14 @@ body {
 
 .wrapper::before {
   height: 734px;
-  left: -473px;
+  left: -483px;
   width: 473px;
 }
 
 .wrapper::after {
   background-image: url("../img/bg-right.png");
   height: 462px;
-  right: -423px;
+  right: -433px;
   width: 423px;
 }
 
@@ -10308,10 +10313,21 @@ body #isotopeCategories .s_title_block {
   margin-top: 0;
 }
 
+body .ocqc-form {
+  margin-bottom: 5px;
+}
+
+body .ocqc-form .go-to-cart {
+  margin-top: 5px;
+  text-align: center;
+}
+
 body .ocqc-form .input-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 100px;
+  margin: 0 auto;
 }
 
 body .ocqc-form .ocqc-label {
@@ -10373,16 +10389,12 @@ body .ocqc-form .sub-tooltip-hook .sub-tooltip:before {
   left: calc(50% - 10px);
 }
 
-.ocqc-add-to-cart-button {
-  margin-bottom: 3px;
-}
-
 body .ocqc-notification {
   background: #F51164;
 }
 
 body .product_list.grid .product-price-button-wrapper {
-  min-height: 65px;
+  min-height: 95px;
 }
 
 @media (max-width: 768px) {
@@ -10396,4 +10408,50 @@ body .product_list.grid .product-price-button-wrapper {
 body #bestkit_bootstraptabs {
   background: none;
   border: none;
+}
+
+#HOOK_PAYMENT form {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#HOOK_PAYMENT form:before, #HOOK_PAYMENT form:after {
+  content: " ";
+  display: table;
+}
+
+#HOOK_PAYMENT form:after {
+  clear: both;
+}
+
+#HOOK_PAYMENT form span {
+  margin: 0 !important;
+}
+
+#HOOK_PAYMENT form input[type="image"] {
+  width: 90px;
+}
+
+#HOOK_PAYMENT form .payment_module {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+}
+
+.payment_module.paypal {
+  margin-bottom: 10px;
+}
+
+.payment_module.paypal a {
+  width: 100%;
+}
+
+body .cart-info {
+  padding-right: 20px;
 }

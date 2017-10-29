@@ -6,7 +6,7 @@
       <th class="cart_product">{l s='Product'}</th>
       <th class="cart_description">{l s='Description'}</th>
       <th class="cart_ref">{l s='Ref.'}</th>
-      <th class="cart_avail">{l s='Avail.'}</th>
+      {* <th class="cart_avail">{l s='Avail.'}</th> *}
       <th class="cart_quantity">{l s='Qty'}</th>
       <th class="shipping_address">{l s='Shipping address'}</th>
     </tr>

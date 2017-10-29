@@ -6,7 +6,11 @@
 }
 
 .wrapper {
-  position: relative;
+  position: sticky;
+  bottom: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
 
   &::before,
   &::after {
@@ -22,14 +26,14 @@
 
   &::before {
     height: 734px;
-    left: -473px;
+    left: -483px;
     width: 473px;
   }
 
   &::after {
     background-image: url("../img/bg-right.png");
     height: 462px;
-    right: -423px;
+    right: -433px;
     width: 423px;
   }
 }
@@ -281,8 +285,17 @@ body #isotopeCategories .s_title_block {
 }
 
 body .ocqc-form {
+  margin-bottom: 5px;
+
+  .go-to-cart {
+    margin-top: 5px;
+    text-align: center;
+  }
+
   .input-group {
     display: flex;
+    max-width: 100px;
+    margin: 0 auto;
   }
 
   .ocqc-label {
@@ -334,16 +347,12 @@ body .ocqc-form {
   }
 }
 
-.ocqc-add-to-cart-button {
-  margin-bottom: 3px;
-}
-
 body .ocqc-notification {
   background: $brand-primary;
 }
 
 body .product_list.grid .product-price-button-wrapper {
-  min-height: 65px;
+  min-height: 95px;
 }
 
 @media (max-width: $screen-sm-min) {
@@ -357,4 +366,38 @@ body .product_list.grid .product-price-button-wrapper {
 body #bestkit_bootstraptabs {
   background: none;
   border: none;
+}
+
+#HOOK_PAYMENT form {
+  @include clearfix();
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  span {
+    margin: 0 !important;
+  }
+
+  input[type="image"] {
+    width: 90px;
+  }
+
+  .payment_module {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+}
+
+.payment_module.paypal {
+  margin-bottom: 10px;
+
+  a {
+      width: 100%;
+  }
+}
+
+body .cart-info {
+  padding-right: 20px;
 }

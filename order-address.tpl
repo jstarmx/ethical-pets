@@ -66,7 +66,7 @@
     </div>
   </div>
   <p class="address_add submit">
-    <a href="{$link->getPageLink('address', true, NULL, "back={$back_order_page}?step=1{if $back}&mod={$back}{/if}")|escape:'html':'UTF-8'}" title="{l s='Add'}" class="btn btn-success">
+    <a href="{$link->getPageLink('address', true, NULL, "back={$back_order_page}?step=1{if $back}&mod={$back}{/if}")|escape:'html':'UTF-8'}" title="{l s='Add'}" class="btn btn-primary">
       <span>{l s='Add a new address'} <i class="icon icon-chevron-right"></i></span>
     </a>
   </p>
@@ -85,7 +85,7 @@
         <i class="icon icon-chevron-left"></i>
         {l s='Continue Shopping'}
       </a>
-      <button type="submit" name="processAddress" class="btn btn-lg btn-success pull-right">
+      <button type="submit" name="processAddress" class="btn btn-lg btn-primary pull-right">
         <span>{l s='Proceed to checkout'} <i class="icon icon-chevron-right"></i></span>
       </button>
     </p>

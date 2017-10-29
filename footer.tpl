@@ -15,6 +15,7 @@
     {/if}
 
   </footer>
+  <div class="wrapper"></div>
 
 {/if}
 {include file="$tpl_dir./global.tpl"}

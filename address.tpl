@@ -179,7 +179,7 @@
       {if isset($mod)}<input type="hidden" name="mod" value="{$mod}" />{/if}
       {if isset($select_address)}<input type="hidden" name="select_address" value="{$select_address|intval}" />{/if}
       <input type="hidden" name="token" value="{$token}" />
-      <button type="submit" name="submitAddress" id="submitAddress" class="btn btn-lg btn-success">
+      <button type="submit" name="submitAddress" id="submitAddress" class="btn btn-lg btn-primary">
         <span>
           {l s='Save'}
           <i class="icon icon-chevron-right"></i>

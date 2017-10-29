@@ -62,8 +62,8 @@
         <th class="cart_product">{l s='Product'}</th>
         <th class="cart_description">{l s='Description'}</th>
         {if $PS_STOCK_MANAGEMENT}
-          {assign var='col_span_subtotal' value='3'}
-          <th class="cart_avail text-center">{l s='Availability'}</th>
+          {assign var='col_span_subtotal' value='2'}
+          {* <th class="cart_avail text-center">{l s='Availability'}</th> *}
         {else}
           {assign var='col_span_subtotal' value='2'}
         {/if}
@@ -522,7 +522,7 @@
   <div id="HOOK_SHOPPING_CART">{$HOOK_SHOPPING_CART}</div>
   <p class="cart_navigation clearfix">
     {if !$opc}
-      <a  href="{if $back}{$link->getPageLink('order', true, NULL, 'step=1&amp;back={$back}')|escape:'html':'UTF-8'}{else}{$link->getPageLink('order', true, NULL, 'step=1')|escape:'html':'UTF-8'}{/if}" class="btn btn-lg btn-success pull-right standard-checkout" title="{l s='Proceed to checkout'}">
+      <a  href="{if $back}{$link->getPageLink('order', true, NULL, 'step=1&amp;back={$back}')|escape:'html':'UTF-8'}{else}{$link->getPageLink('order', true, NULL, 'step=1')|escape:'html':'UTF-8'}{/if}" class="btn btn-lg btn-primary pull-right standard-checkout" title="{l s='Proceed to checkout'}">
         <span>{l s='Proceed to checkout'} <i class="icon icon-chevron-right"></i></span>
       </a>
     {/if}

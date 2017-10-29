@@ -11,9 +11,9 @@
       <th class="cart_product">{l s='Product'}</th>
       <th class="cart_description">{l s='Description'}</th>
       {if $PS_STOCK_MANAGEMENT}
-        {assign var='col_span_subtotal' value='3'}
-        {assign var='col_span_total' value='7'}
-        <th class="cart_avail text-center">{l s='Availability'}</th>
+        {assign var='col_span_subtotal' value='2'}
+        {assign var='col_span_total' value='6'}
+        {* <th class="cart_avail text-center">{l s='Availability'}</th> *}
       {else}
         {assign var='col_span_subtotal' value='2'}
         {assign var='col_span_total' value='6'}
@@ -345,5 +345,5 @@
     <i class="icon icon-chevron-left"></i>
     {l s='Continue shopping'}
   </a>
-  <button data-show-if-js="" style="" id="confirmOrder" type="button" class="btn btn-lg btn-success pull-right standard-checkout"><span>{l s='Order With Obligation To Pay'}</span></button>
+  <button data-show-if-js="" style="" id="confirmOrder" type="button" class="btn btn-lg btn-primary pull-right standard-checkout"><span>{l s='Order With Obligation To Pay'}</span></button>
 </p>

@@ -37,7 +37,7 @@
     </div>
   </div>
   <p class="address_add submit">
-    <a href="{$link->getPageLink('address', true, NULL, "back={$back_order_page}?step=1{'&multi-shipping=1'|urlencode}{if $back}&mod={$back|urlencode}{/if}")|escape:'html':'UTF-8'}" title="{l s='Add'}" class="btn btn-success"><span>{l s='Add a new address'} <i class="icon icon-chevron-right"></i></span></a>
+    <a href="{$link->getPageLink('address', true, NULL, "back={$back_order_page}?step=1{'&multi-shipping=1'|urlencode}{if $back}&mod={$back|urlencode}{/if}")|escape:'html':'UTF-8'}" title="{l s='Add'}" class="btn btn-primary"><span>{l s='Add a new address'} <i class="icon icon-chevron-right"></i></span></a>
   </p>
   {if !$opc}
   <div id="ordermsg" class="form-group">
@@ -55,7 +55,7 @@
       {else}
         <a href="{$link->getPageLink('order', true, NULL)|escape:'html':'UTF-8'}" title="{l s='Previous'}" class="btn btn-lg btn-default"><i class="icon icon-chevron-left"></i> {l s='Continue Shopping'}</a>
       {/if}
-      <button type="submit" name="processAddress" class="btn btn-lg btn-success pull-right"><span>{l s='Proceed to checkout'} <i class="icon icon-chevron-right"></i></span></button>
+      <button type="submit" name="processAddress" class="btn btn-lg btn-primary pull-right"><span>{l s='Proceed to checkout'} <i class="icon icon-chevron-right"></i></span></button>
     </p>
   </form>
 {else}

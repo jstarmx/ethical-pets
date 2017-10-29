@@ -49,7 +49,7 @@
 
 <div class="container">
 <div class="row">
-<div class="column-12 wrapper">
+<div class="column-12">
 {if !isset($content_only) || !$content_only}
 
 {if isset($restricted_country_mode) && $restricted_country_mode}

@@ -17,7 +17,7 @@
                   <span class="quantity">{$product.cart_quantity}</span> &times;
                 </span>
                 <a class="cart_block_product_name" href="{$link->getProductLink($product, $product.link_rewrite, $product.category, null, null, $product.id_shop, $product.id_product_attribute)|escape:'html':'UTF-8'}" title="{$product.name|escape:'html':'UTF-8'}">
-                  {$product.name|truncate:13:'...'|escape:'html':'UTF-8'}
+                  {$product.name|truncate:40:'...'|escape:'html':'UTF-8'}
                 </a>
               </div>
               {if isset($product.attributes_small)}
@@ -162,7 +162,7 @@
     </div>
 
     <div class="cart-buttons">
-      <a id="button_order_cart" class="btn btn-block btn-success" href="{$link->getPageLink("$order_process", true)|escape:"html":"UTF-8"}" title="{l s='Check out' mod='blockcart'}" rel="nofollow">
+      <a id="button_order_cart" class="btn btn-block btn-primary" href="{$link->getPageLink("$order_process", true)|escape:"html":"UTF-8"}" title="{l s='Check out' mod='blockcart'}" rel="nofollow">
         {l s='Check out' mod='blockcart'} <i class="icon icon-angle-right"></i>
       </a>
     </div>

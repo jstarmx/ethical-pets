@@ -9,7 +9,7 @@
             <th class="cart_product">{l s='Product'}</th>
             <th class="cart_description">{l s='Description'}</th>
             {if $PS_STOCK_MANAGEMENT}
-              <th class="cart_availability text-center">{l s='Availability'}</th>
+              {* <th class="cart_availability text-center">{l s='Availability'}</th> *}
             {/if}
             <th class="cart_unit text-right">{l s='Unit price'}</th>
             <th class="cart_quantity text-center">{l s='Qty'}</th>
